@@ -1,0 +1,16 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ .Host }}/res/css/base.css">
+    <link rel="icon" href="{{ .Host }}/res/icon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ .Host }}/res/icon/favicon.ico" type="image/x-icon">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+{{template "side" . }}
+{{template "test" .Test }}
+</body>
+</html>
+{{end}}

@@ -1,0 +1,11 @@
+/*.exe
+/*.html
+
+# For goland
+.idea
+
+# Golang
+/go.sum
+
+# Others
+*.pptx

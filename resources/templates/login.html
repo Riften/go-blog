@@ -1,0 +1,22 @@
+{{define "login"}}
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ .Host }}/res/css/base.css">
+    <link rel="icon" href="{{ .Host }}/res/icon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ .Host }}/res/icon/favicon.ico" type="image/x-icon">
+    <title>登录</title>
+</head>
+<body>
+<div class="login">
+    <form action="/login_action">
+        用户：<input type="text" name="account"><br />
+        暗号：<input type="password" name="password"><br />
+        <input class="invisible" type="text" name="from" value="{{ .From }}">
+        <input type="submit" value="试试">
+    </form>
+</div>
+</body>
+</html>
+{{end}}
